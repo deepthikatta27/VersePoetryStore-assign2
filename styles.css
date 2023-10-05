@@ -183,7 +183,7 @@
 .latest-books {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 5vw;
 }
 
@@ -232,6 +232,11 @@
     }
     .playlist-container{
         align-items: center;
+    }
+    .latest-books {
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
     }
 
 
