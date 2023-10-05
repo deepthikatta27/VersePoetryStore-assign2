@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 7vw 0px 7vw;
+    background-color: rgb(50, 69, 77);
+}
+
+.logo{
+    color: rgb(146, 146, 119);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar a {
+    color: rgb(246, 242, 228);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.navbar div {
+    display: flex;
+}
+
+.top-sec {
+    display: flex;
+    padding: 20px 7vw 7vw 7vw;
+    justify-content: space-between;
+    background-color: rgb(50, 69, 77);
+}
+
+.top-heading {
+    display: flex;
+    align-items: top;
+    flex-direction: column;
+}
+
+.top-heading h1 {
+    color: rgb(246, 242, 228);
+    font-size: 45px;
+}
+
+.top-side-desc {
+    color: rgb(246, 242, 228);
+    max-width: calc(50% - 6vw);
+}
+.top-side-desc p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.user-subs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmax;
+    margin-top: 2vmax;
+}
+
+.user-subs input{
+    min-width: 50%;
+    padding: 12px;
+}
+
+.user-subs button{
+    background-color: rgb(141, 124, 85);
+    color: rgb(245, 244, 240);
+    border-radius: 5px;
+    border:none;
+    font-size: 12px;
+    padding: 12px 15px;
+    cursor:pointer;
+}
+
+.mid-sec {
+    background-color: rgb(246, 242, 228);
+    display: flex;
+    justify-content: space-between;
+    padding: 8vw;
+}
+
+.mid-sec-info {
+    display: flex;
+}
+
+.rotated-txt p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: rgb(127, 113, 80);
+    font-size: small;
+    font-weight: bold;
+}
+
+.mid-sec-desc {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    color: rgb(61, 75, 82);
+    margin-left: 5vmax;
+}
+
+.mid-sec-desc h1{
+    font-size: 40px;
+}
+
+.author-name {
+    margin-top: 2vmax;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.author-desc {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top: 2vmax;
+}
+
+.mid-sec-desc a{
+    margin-top: 2vmax;
+    color: rgb(61, 75, 82);
+    text-decoration: none;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.playlist-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 25vmax;
+}
+
+.playlist {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+
+.num-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    color: rgb(127, 113, 80);
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.list-item p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color:rgb(61, 75, 82);
+}
+
+.list-item cite {
+    color: rgb(61, 75, 82);
+    font-size: 13px;
+}
+
+.bottom-sec {
+    background-color: rgb(230, 226, 212);
+    padding: 7vw 6vw 6vw 7vw;
+}
+
+.bottom-sec-heading{
+    color:  rgb(127, 113, 80);
+    font-size:small;
+}
+.latest-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+
+.book-pic img{
+    width: 120px;
+    object-fit: contain;
+}
+
+.book-info p{
+    margin: 10px 0px 6px 0px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(61, 75, 82);
+}
+
+.book-info cite{
+    font-size: 13px;
+}
+.book-item{
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .top-sec {
+        flex-direction: column;
+    }
+    .top-side-desc {
+        margin-top: 2vw;
+        max-width: 80%;
+    }
+    .mid-sec {
+        flex-direction: column;
+    }
+    .rotated-txt p {
+        writing-mode: horizontal-tb;
+        transform:none;
+    }
+    .mid-sec-info {
+        flex-direction: column;
+    }
+    .mid-sec-desc {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .playlist-container{
+        align-items: center;
+    }
+
+
+}
